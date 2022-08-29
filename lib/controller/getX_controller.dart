@@ -6,7 +6,7 @@ import 'package:getx_api_calling/model/userData_model.dart';
 
 class AppController extends GetxController {
   var getposts = <UserData>[].obs;
-  Services services = Services();
+  UserDataClass userData = UserDataClass();
   var isloading = true.obs;
 
   @override
@@ -18,7 +18,7 @@ class AppController extends GetxController {
   callpostmethod() async {
     try {
       isloading.value = true;
-      var result = await services.getData();
+      var result = await userData.getUserData();
 
       if (result != null) {
         getposts.assignAll(result);

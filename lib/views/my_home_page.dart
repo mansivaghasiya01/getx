@@ -4,15 +4,15 @@ import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:getx_api_calling/controller/getX_controller.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class UserDataPage extends StatefulWidget {
+  const UserDataPage({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _MyHomePageState createState() => _MyHomePageState();
+  _UserDataPageState createState() => _UserDataPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _UserDataPageState extends State<UserDataPage> {
   var controller = Get.put(AppController());
 
   @override

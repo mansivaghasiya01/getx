@@ -5,8 +5,8 @@ import 'package:getx_api_calling/model/userData_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 
-class Services {
-  Future<List<UserData>?> getData() async {
+class UserDataClass {
+  Future<List<UserData>?> getUserData() async {
     try {
       var response = await http
           .get(Uri.parse("https://jsonplaceholder.typicode.com/albums"));
